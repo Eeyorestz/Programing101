@@ -12,10 +12,11 @@ function tetrahedron_filled(tetrahedrons, water) {
         count++;
     }
  
-    console.log(--count);
+    return --count;
 };
  
 var water = 10;
-var tetrahedrons = [ ].sort(function(a, b){return a-b});
+var tetrahedrons = [ 100, 20, 30 ].sort(function(a, b){return a-b});
  
-tetrahedron_filled(tetrahedrons, water);
+var result = tetrahedron_filled(tetrahedrons, water);
+console.log('Result:', result);
